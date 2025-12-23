@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener("DOMContentLoaded", function() {
+                let button = document.querySelectorAll("button");
+                let disp = document.getElementById("p1");
+
+                for (let i = 0; i < button.length; i++) {
+                    button[i].addEventListener("click", function() {
+                        if (button[i].classList.contains('correct')) {
+                            button[i].style.backgroundColor = "green";
+                            disp.innerHTML = "Correct!";
+                        } else if (button[i].classList.contains('incorrect')) {
+                            button[i].style.backgroundColor = "red";
+                            disp.innerHTML = "Incorrect";
+                        }
+                    });
+                }
+
+            });
+
+            function inp() {
+                let text = document.getElementById("te");
+
+                if (te.value == "Yes") {
+                    te.style.backgroundColor = "green";
+                    document.getElementById("p2").innerHTML = "Correct!";
+                } else {
+                    te.style.backgroundColor = "red";
+                    document.getElementById("p2").innerHTML = "Incorrect";
+
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What colour is your favorite?</h3>
+                <form>
+                    <input type="radio" id="red" name="choice">
+                    <button type="button" class="correct"><label for="red">Red</label></button>
+
+                    <input type="radio" id="blue" name="choice">
+                    <button type="button" class="incorrect"><label for="blue">Blue</label></button>
+
+                    <input type="radio" id="green" name="choice" class="incorrect">
+                    <button type="button" class="incorrect"><label for="green">Green</label></button>
+                </form>
+                <p id="p1"></p>
+
+                <!-- TODO: Add multiple choice question here -->
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What do you value most in your life?</h3>
+                <input type="text" id="te" name="value">
+                <button type="button" onclick=inp()>Confirm</button>
+                <p id="p2"></p>
+            </div>
+        </div>
+    </body>
+
+</html>

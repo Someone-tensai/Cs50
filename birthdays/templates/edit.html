@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+    <form action="/update" method="post">
+        <input type="hidden" name="edited" value= "{{ birthday.id }}">
+        Name <input type="text" name="name" >
+        Month <input type="text" name="month">
+        Day <input type="text" name="day">
+        <input type="submit" value="Save Changes">
+    </form>
+{% endblock %}

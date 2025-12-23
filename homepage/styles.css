@@ -1,0 +1,114 @@
+body{
+    background-color: black;
+    overflow-x: hidden;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+}
+
+.flex-container{
+    display: flex;
+    gap: 15px;
+    background-color: black;
+
+}
+
+.flex-container a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.flex-container a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    font-family:"sans-serif";
+    margin-top:50px;
+}
+.main .h1{
+    color: white;
+    font-size: 90px;
+    margin-top:10px;
+}
+.main .hi{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+.main .ai{
+    color: grey;
+    font-size: 30px;
+}
+.navbar img {
+    height: 50px;
+    width: auto;
+}
+
+.contact {
+    display:flex;
+    flex-direction:column;
+    margin-top: 10%;
+    margin-left: 20%;
+    paddingL 8px 10px;
+
+}
+.contact .connect{
+    font-size: 50px;
+    color: white;
+}
+.contact .hit{
+    font-size: 20px;
+    color: grey;
+    margin-top:15px;
+}
+
+.log {
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+}
+.log p{
+
+    color:white;
+}
+
+.log img{
+    display: inline;
+    height: 40px;;
+    width: 40px;;
+}
+
+.ms-cus{
+    margin-left:5rem;
+}
+
+.container{
+    margin-top: 4rem;
+    margin-left: 12rem;
+    margin-right:15rem;
+    max-width: 1000px;
+}
+.col-md-4 ,.text , .cn{
+    color:white;
+}
+
+.cn 
+    margin-left: 20rem;
+    margin-right: 14rem;
+}
